@@ -103,5 +103,5 @@ sz2020$Kisterseg <- ifelse(sz2020$Kisterseg=='' & sz2020$varos=='Budapest', 'Bud
 write.csv(sz2020, '../2020shiny/szechenyi2020_adatok.csv', row.names = F)
 
 
-
+summary(sz2020)
 
