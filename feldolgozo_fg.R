@@ -28,6 +28,7 @@ df = lapply(col1, function(node) {
   data.frame(forras, varos, nyertes, leiras, stringsAsFactors = F)
 }
 
+
 )	
 df = do.call("rbind", df)
 
