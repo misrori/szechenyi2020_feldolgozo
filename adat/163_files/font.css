@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'DINProRegular';
+  src: url('font/dinpro-regular_0-webfont.eot');
+  src: url('font/dinpro-regular_0-webfont.eot?#iefix') format('embedded-opentype'), url('font/dinpro-regular_0-webfont.woff') format('woff'), url('font/dinpro-regular_0-webfont.ttf') format('truetype'), url('font/dinpro-regular_0-webfont.svg#DINProRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'DINProMedium';
+  src: url('font/dinpro-medium_0-webfont.eot');
+  src: url('font/dinpro-medium_0-webfont.eot?#iefix') format('embedded-opentype'), url('font/dinpro-medium_0-webfont.woff') format('woff'), url('font/dinpro-medium_0-webfont.ttf') format('truetype'), url('font/dinpro-medium_0-webfont.svg#DINProMedium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'DINProLight';
+  src: url('font/dinpro-light_0-webfont.eot');
+  src: url('font/dinpro-light_0-webfont.eot?#iefix') format('embedded-opentype'), url('font/dinpro-light_0-webfont.woff') format('woff'), url('font/dinpro-light_0-webfont.ttf') format('truetype'), url('font/dinpro-light_0-webfont.svg#DINProLight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

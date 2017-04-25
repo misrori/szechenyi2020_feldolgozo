@@ -1,8 +1,8 @@
 library(XML)
 library(data.table)
 library(rio)
-library(dplyr)
-library(sqldf)
+
+
 
 feldolgozo<- function(nev){
 print(nev)
@@ -67,14 +67,14 @@ return(my_df)
 
 full_adat<- data.frame()
 
-my_list <-paste('adat', paste(1:76, '.html', sep=''), sep = '/')
+my_list <-paste('adat', paste(1:202, '.html', sep=''), sep = '/')
 
 
 for (i in my_list) {
   adat<- feldolgozo(nev = i)
   full_adat<- rbind(full_adat,adat )
 }
-rm(adat)
+
 full_adat$telep_help <- sapply(strsplit(full_adat$varos,' \\('), "[", 1)
 
 # http://www.ksh.hu/docs/hun/hnk/hnk_2016.xls
@@ -93,6 +93,8 @@ telepules_adatok$tipus <- ifelse(is.na(telepules_adatok$tipus),'nem_hatranyos_he
 sz2020 <- data.table(merge(full_adat, telepules_adatok, by.x = 'telep_help', by.y = 'Telepules', all.x = T ))
 sz2020 <- sz2020[,-1, with=F]
 
+sz2020_duplicated <- sz2020[duplicated(sz2020),]
+
 sz2020 <- sz2020[!duplicated(sz2020),]
 
 sz2020$ev <-year(sz2020$datum) 
@@ -101,8 +103,8 @@ sz2020$ev <-year(sz2020$datum)
 sz2020$Kisterseg <- ifelse(sz2020$Kisterseg=='' & sz2020$varos=='Budapest', 'Budapest', sz2020$Kisterseg)
 
 
-write.csv(sz2020, '../2020shiny/szechenyi2020_adatok.csv', row.names = F)
-
+write.csv(sz2020, 'eredmeny/szechenyi2020_adatok.csv', row.names = F)
+write.csv(sz2020_duplicated, 'eredmeny/szechenyi2020_duplicalt.csv', row.names = F)
 
 summary(sz2020)
 

@@ -1,0 +1,356 @@
+@charset "utf-8";
+
+#osmlayerfeatureregion-0-place-bar {
+    background-color: white;
+}
+
+body {
+    margin: 10px;
+    color: #555555;
+}
+
+.default_font {
+    font-family: Tahoma, sans-serif !important;
+    font-size: 8pt !important;
+
+}
+
+#container {
+    width: 572px;
+}
+
+a:link, a:visited, a:hover {
+    text-decoration: none;
+    color: #6781BF;
+}
+
+* {
+    border-radius: 0px;
+    font-family: Tahoma, sans-serif;
+    font-size: 8pt;
+    line-height: 150%;
+}
+
+tr.ui-jqgrid-labels > th {
+    height: 70px !important;
+    background-color: #00ff00 !important;
+    background: url(../img/2020/bg_table-head.png) repeat-x scroll 0 0 #19AE77 !important;
+    color: #ffffff;
+    color: white !important;
+    line-height: 130%;
+}
+
+.ui-jqgrid-sortable {
+    height: auto !important;
+    padding: 5px;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+}
+
+.ui-jqgrid-htable {
+    -moz-border-colors: none !important;
+    border-collapse: separate;
+    border-color: none !important;
+    border-image: none;
+    border-radius: 0px;
+    border-style: none !important;
+    border-width: 0 !important;
+    border-spacing: 0px;
+    max-width: 100%;
+    font-family: Tahoma, sans-serif !important;
+    font-size: 8pt !important;
+}
+
+.ui-jqgrid-btable > tbody > tr > td {
+    word-wrap: break-word; /* IE 5.5+ and CSS3 */
+    white-space: pre-wrap; /* CSS3 */
+    white-space: -pre-wrap; /* Opera 4-6 */
+    white-space: -o-pre-wrap; /* Opera 7 */
+    white-space: normal !important;
+}
+
+.ui-jqgrid-btable tr.jqgrow {
+    border-left: 2px solid #808080;
+}
+
+.jqgrow ui-row-ltr {
+    padding: 5px !important;
+}
+
+/*
+word-wrap: break-word;
+overflow-wrap: break-word;
+*/
+
+.ui-jqgrid tr.jqgrow td {
+    word-wrap: break-word; /* IE 5.5+ and CSS3 */
+    white-space: pre-wrap; /* CSS3 */
+    white-space: -pre-wrap; /* Opera 4-6 */
+    white-space: -o-pre-wrap; /* Opera 7 */
+    white-space: normal !important;
+    vertical-align: text-top;
+    height: auto;
+}
+
+#pager.ui-jqgrid-pager {
+    height: auto;
+    padding: 0.5% 0% !important;
+}
+
+.tabcontent, .btnpanel {
+    padding: 10px;
+    width: 550px;
+    /* height: 390px; */
+    background-color: #eeeeee;
+    border: 1px solid #dddddd;
+    border-top: 0px;
+    border-bottom: 0px;
+    overflow: auto;
+}
+
+.btnpanel {
+    border: 1px solid #dddddd;
+    border-top: 0px;
+    margin-bottom: 20px;
+    text-align: right;
+    border-radius: 0px;
+    -webkit-border-bottom-right-radius: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    -moz-border-radius-bottomright: 4px;
+    -moz-border-radius-bottomleft: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    padding: 0px 10px 10px 10px;
+}
+
+.tabcontent {
+    /*padding: 10px 10px 0px 10px;*/
+}
+
+.nav {
+    margin-bottom: 0px;
+}
+
+#btn_prev, #btn_next, #btn_search {
+    width: 75px;
+}
+
+.default_combobox, .default_text {
+    padding: 5px !important;
+    width: 520px !important;
+    height: auto;
+    border-radius: 3px !important;
+    margin: 0 0 0px 0 !important;
+}
+
+.default_text_2 {
+    padding: 5px !important;
+    width: 507px !important;
+    height: auto;
+    border-radius: 3px !important;
+    margin: 0 0 0px 0 !important;
+}
+
+.default_combobox_little, .default_text_little {
+    padding: 3px !important;
+    height: auto;
+    border-radius: 3px !important;
+    margin: 0 0 0px 0 !important;
+}
+
+.default_text {
+    width: 472px !important;
+    height: 20px !important;
+}
+
+legend {
+    font-family: "DINProRegular", sans-serif;
+    font-size: 12pt;
+}
+
+h1, h2 {
+    font-family: "DINProRegular", sans-serif;
+    font-size: 12pt;
+    margin-bottom: 4px;
+    line-height: 120%;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 10pt;
+}
+
+
+.nav-tabs > li > a, .nav-pills > li > a {
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+.nav-tabs > li > a {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: 0px solid transparent;
+    -webkit-border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+    border-radius: 4px 4px 0 0;
+}
+
+.nav-tabs > li > a:hover, .nav-tabs > li > a:focus {
+    /*border-color: #eeeeee #eeeeee #dddddd;*/
+    border: 0px solid #eee;
+    border-bottom: 0px;
+    background-color: #eeeeee;
+}
+
+.nav-tabs > .active > a, .nav-tabs > .active > a:hover, .nav-tabs > .active > a:focus {
+    background-color: transparent;
+    border: 0px solid #ddd;
+    border-bottom-color: transparent;
+    font-weight: bold;
+}
+
+.nav-tabs {
+    background-color: #eeeeee;
+    border: 1px solid #ddd;
+    -webkit-border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+    border-radius: 4px 4px 0 0;
+}
+
+.title_input, #op_types_div {
+    margin: 2px 0px;
+}
+#op_types_div {
+    float:left;
+}
+
+form {
+    display: inline;
+}
+
+#result_count {
+    margin: 10px 0px;
+}
+
+.datatab {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.datatab td, .datatab th {
+    border: 1px solid gray;
+    padding: 5px;
+}
+
+.paly_tab_td1 {
+    width: 40%;
+    background-color: #ebebeb;
+}
+
+.paly_tab_td2 {
+    width: 60%;
+}
+
+.datatab a:link, .datatab a:visited, .datatab a:hover {
+    text-decoration: none;
+    font-weight: bold;
+    color: #004a9e;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+#div_export_button {
+    left: 470px;
+}
+
+#div_print_button {
+    left: 540px;
+}
+
+#div_help_button {
+    left: 565px;
+}
+
+#div_choose_lang {
+    left: 420px;
+}
+
+#div_print_button, #div_export_button, #div_help_button, #div_choose_lang {
+    position: absolute;
+    top: 32px;
+    display: inline;
+    cursor: pointer;
+}
+
+.ui-state-highlight, .ui-state-hover, .ui-widget-content, .jqgrow, .ui-row-ltr {
+    background-image: none !important;
+    background-color: inherit !important;
+}
+
+
+#result_count {
+    color: #6781BF;
+}
+
+#li_tab1 {
+    padding: 5px 5px 5px 15px;
+}
+
+#li_tab2 {
+    padding: 5px;
+}
+
+#li_tab_sep {
+    padding: 5px 0px;
+}
+
+.nav, .nav-tabs {
+    background-color: #2D4DA2;
+    color: white;
+}
+
+/* after new branch */
+
+#wait {
+    display: none;
+}
+
+#wait .dialog-title {
+    display: none;
+}
+
+.modal {
+    width: 80%;
+    margin-left:-40%;
+}
+
+#wait_body {
+    text-align: center;
+    padding: 40px 0px;
+}
+
+
+.jqgrow td {
+    padding: 5px !important;
+}
+
+.fs8 {
+    font-size: 8pt;
+    color: black;
+    margin-bottom: 2px;
+    width: 160px;
+}
+
+.accordion-toggle {
+    font-weight: bold;
+}
+
+.accordion-heading {
+    background-color: #f0f0f0;
+}
+
+.past-overed-separator {
+    font-size: 7pt !important;
+}
